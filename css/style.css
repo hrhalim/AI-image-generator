@@ -1,0 +1,379 @@
+/* ***************************************
+Template Name: AI || AI HTML Template
+Author: ThemeFax 
+Author Email: themefaxbd@gmail.com
+website: http://www.themefax.com/
+Version: 1.0
+Description:  
+*************************************** 
+*/
+
+
+/*================================
+    GLOBAL CSS START
+================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--colorWhite);
+    font-family: var(--headingFont);
+}
+
+p,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+} */
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #E4E7E9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--colorDark100);
+}
+
+button {
+    border: none;
+}
+
+:root {
+    --colorPrimary: #292B75; 
+    --colorBlack: #000000; 
+    --colorBlack100: #0F172A;
+    --colorBlack200: #0F1629;
+    --colorBlack300: #151515;
+    --colorBlack400: #110718; 
+    --colorBlack500: #05092B;
+    --colorBlack600: #1E2241;
+    --colorBlack700: #0F1333;
+    --colorYellow: #EEBE42;
+    --colorLime: #E50087;
+    --colorRed: #E54500;
+    --colorGrape: #8C2AFD;
+    --colorBlue: #324DF6;
+    --colorWhite: #ffffff;
+    --colorWhite100: #fffffff6;
+    --colorWhite200: #fffffff7;
+    --colorDark: #343E4F;
+    --colorDark100: #848B96; 
+    --colorDark200: #222325; 
+    --colorDark300: #212A3E;
+    --colorDark400: #1E293B;
+    --blueGradient: linear-gradient(50deg, #324DF6 7.14%, #324DF6 7.15%, #667DFA 91.6%);
+    --redGradient: linear-gradient(90deg, #EF1F83 3.14%, #9D42EE 98.78%);
+    --yellowGradient: linear-gradient(122deg, #FFE000 0.5%, #BDFF00 51.22%);
+    --blackGradient: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00) 78.12%); 
+    --paraFont: 'Roboto', sans-serif;
+    --headingFont: 'Montserrat Alternates', sans-serif;
+
+}
+
+/*================================
+    GLOBAL CSS END
+================================*/
+
+/* menu start */
+.main_menu {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    height: 80px;
+    border-radius: 50px; 
+    background-color: var(--colorDark400);
+    box-shadow: 0px 1px 4px 0px rgba(8, 22, 60, 0.14);
+        z-index: 999;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu .navbar-brand {
+    display: inline-block;
+    width: 200px;
+}
+
+.main_menu .navbar-nav {
+    line-height: 80px;
+}
+
+.main_menu .navbar-nav .nav-item {
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    margin: 0px 15px;
+    padding: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    position: relative;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--colorPrimary);
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.main_menu .navbar-nav .nav-item:hover .nav-link,
+.main_menu .navbar-nav .nav-item .nav-link.active {
+    color: var(--colorPrimary) !important;
+}
+
+.main_menu .navbar-nav .nav-item:hover .nav-link::after,
+.main_menu .navbar-nav .nav-item .nav-link.active::after {
+    opacity: 1;
+}
+
+.main_menu .navbar-nav .nav-item .nav-link i {
+    font-size: 14px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.droap_menu {
+    position: absolute;
+    width: 250px;
+    max-height: 500px;
+    top: 120%;
+    left: 0;
+    background: var(--colorWhite);
+    box-shadow: var(--boxShadow);
+    overflow: hidden;
+    overflow-y: auto;
+    line-height: 50px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+    -o-transition: all linear .2s;
+    z-index: 99;
+}
+
+.droap_menu::-webkit-scrollbar {
+    scrollbar-width: thin !important;
+    background: #fff;
+    width: 6px;
+}
+
+.droap_menu::-webkit-scrollbar-thumb {
+    background: #ddd;
+}
+
+.droap_menu li a {
+    display: block;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorBlack);
+    position: relative;
+    padding: 0px 15px 0px 30px;
+    border-bottom: 1px solid #eee;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.droap_menu li a::after {
+    position: absolute;
+    content: "/f105";
+    width: 100%;
+    height: 100%;
+    background: var(--colorPrimary);
+    top: 50%;
+    left: 15px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.droap_menu li:last-child a {
+    border-bottom: 0;
+}
+
+.droap_menu li a:hover,
+.droap_menu li a.active {
+    color: var(--colorPrimary);
+    padding-left: 35px;
+}
+
+.droap_menu li a:hover::after,
+.droap_menu li a.active::after {
+    opacity: 1;
+}
+
+.main_menu .navbar-nav .nav-item:hover .droap_menu {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main_menu .menu_icon {
+    align-items: center;
+}
+
+.main_menu .menu_icon li {
+    position: relative;
+}
+
+.main_menu .menu_icon li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorBlack);
+    text-transform: capitalize;
+    margin: 0px 10px;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    width: 40px;
+    height: 40px;
+    background: #ff7c0826;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.main_menu .menu_icon li a:hover,
+.main_menu .menu_icon li a.active {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.main_menu .menu_icon li a span {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    border: 1px solid var(--colorWhite);
+    line-height: 24px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    top: -10px;
+    right: -10px;
+}
+
+.main_menu .menu_icon li:last-child a {
+    margin-right: 0;
+}
+
+.main_menu .menu_icon li:last-child a::after,
+.main_menu .menu_icon li:last-child a::before {
+    display: none;
+}
+
+.menu_fix {
+    top: 0 !important;
+}
+
+/* menu end */
+
+
+/* footer start */
+.tf__footer {
+    background-color: var(--colorBlack200);
+}
+
+
+/* footer end */

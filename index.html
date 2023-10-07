@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="images/icon/favicon.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/slick.css"> 
     <link rel="stylesheet" href="css/spacing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -54,9 +55,9 @@
                     <a class="nav-link" href="#">Testimonials</a>
                 </li> 
             </ul>
-            <ul class="menu_icon d-flex flex-wrap">
+            <ul class="menu_right d-flex align-items-center gap-4">
                 <li>
-                    <a class="user_icon" href="#"><span>Login</span><i class="fas fa-user" aria-hidden="true"></i>
+                    <a class="user_icon" href="#"><i class="fas fa-user" aria-hidden="true"></i>Login
                     </a>
                 </li>
                 <li>
@@ -70,43 +71,93 @@
     MENU END
 ==============================-->
 
+<!--=============================
+    BANNER START
+==============================-->
+<section class="tf__banner_area pt_230 pb_170 xs_pb_80 xs_pt_150" style="background-image: url(images/bg/banner.jpg);">
+    <div class="container">
+        <div class="tf__banner_content">
+            <h1>The <span style="background-image: url(images/icon/banner-title-vactor.png);">AI Image</span> Generator Redefining Reality.</h1>
+            <ul class="pt_30 pb_60">
+                <li><img src="images/icon/check_mark.png" alt="Image">High-Resolution 4k px images</li>
+                <li><img src="images/icon/check_mark.png" alt="Image">Content generation</li>
+                <li><img src="images/icon/check_mark.png" alt="Image">Royalty free commercial use</li>
+            </ul>
+            <div class="d-flex justify-content-center gap-3 pb_100 xs_pb_50">
+                <a class="btn_secondary" href="#">Watch Demo</a>
+                <a class="btn_primary" href="#">Watch Demo</a>
+            </div>
+            <h2>Collect Digital Art by Ai</h2>
+        </div>
+    </div> 
+        <div class="tf__banner_slider pt_20">
+             <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-1.jpg" alt="Slider Image">
+            </div>
+             <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-2.jpg" alt="Slider Image">
+            </div>
+             <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-3.jpg" alt="Slider Image">
+            </div>
+             <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-4.jpg" alt="Slider Image">
+            </div>
+             
+             <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-5.jpg" alt="Slider Image">
+            </div>
+            <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-4.jpg" alt="Slider Image">
+            </div>
+             <div class="tf__banner_slide">
+                <img src="images/thumb/banner-slide-5.jpg" alt="Slider Image">
+            </div> 
+    </div>
+</section>
+<!--=============================
+    BANNER END
+==============================-->
+
 
 <!--=============================
     FOOTER START
 ==============================-->
 <footer class="tf__footer pt_120 xs_pt_80">
     <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="tf__footer_top_list">
-                    <div class="tf__footer_topItem">
-                        <img src="images/icon/gallary-img.png" alt="Image">
-                    </div>
-                    <div class="tf__footer_topItem">
-                        <h2>Start using our Ai</h2>
-                        <h3>Create Your Image Now</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="tf__footer_top_list">
-                    <div class="tf__footer_topItem">
-                        <img src="images/icon/sign.png" alt="Image">
-                    </div>
-                    <div class="tf__footer_topItem">
-                        <h2>Start Free our Ai</h2>
-                        <h3>Get Start Free Trial</h3>
+        <div class="tf__footer_top_wrapper">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="tf__footer_top_list">
+                        <div class="tf__footer_topItem">
+                            <img src="images/icon/gallary-img.png" alt="Image">
+                        </div>
+                        <div class="tf__footer_topItem">
+                            <h2>Start using our Ai</h2>
+                            <h3>Create Your Image Now</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-                <div class="tf__footer_top_list">
-                    <div class="tf__footer_topItem">
-                        <img src="images/icon/user.png" alt="Image">
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="tf__footer_top_list">
+                        <div class="tf__footer_topItem">
+                            <img src="images/icon/sign.png" alt="Image">
+                        </div>
+                        <div class="tf__footer_topItem">
+                            <h2>Start Free our Ai</h2>
+                            <h3>Get Start Free Trial</h3>
+                        </div>
                     </div>
-                    <div class="tf__footer_topItem">
-                        <h2>Start using our Ai</h2>
-                        <h3>Join Our Community</h3>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="tf__footer_top_list">
+                        <div class="tf__footer_topItem">
+                            <img src="images/icon/user.png" alt="Image">
+                        </div>
+                        <div class="tf__footer_topItem">
+                            <h2>Start using our Ai</h2>
+                            <h3>Join Our Community</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -238,6 +289,8 @@
     <script src="js/jquery-3.7.0.min.js"></script>
     <!--bootstrap js-->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!--slick js-->
+    <script src="js/slick.min.js"></script> 
     <!--font-awesome js-->
     <script src="js/Font-Awesome.js"></script> 
     <!--main/custom js-->

@@ -47,12 +47,14 @@ h6 {
     color: var(--colorWhite);
     font-family: var(--headingFont);
     line-height: 1.2;
+    font-weight: 600; 
 }
 
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: var(--paraFont);
+    line-height: 1.5;
 }
 
 /* img {
@@ -116,7 +118,25 @@ button {
     color: var(--colorWhite); 
     background: var(--blueGradient);
 }
-
+.bg_img_cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tf__sec_title { 
+    text-align: center; 
+    font-size: 50px; 
+    font-weight: 600;
+    line-height: 60px;
+}
+.tf__sec_title span {  
+    background: var(--redGradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slick-slide {
+    margin: 0 15px;
+}
 :root {
     --colorPrimary: #292B75; 
     --colorBlack: #000000; 
@@ -359,6 +379,12 @@ button {
 .user_icon:hover {
     color: var(--colorBlue); 
 }
+.nav-link span {
+    background: var(--blueGradient);
+    border-radius: 4px;
+    padding: 3px 9px;
+    margin-left: 3px;
+}
 
 /* menu end */
 
@@ -373,6 +399,10 @@ button {
     background-repeat: no-repeat;
     background-position-y: 83px;
     padding-bottom: 13px;
+}
+.tf__banner_content h2 {
+    font-size: 18px;
+    font-weight: 500;
 }
 .tf__banner_content ul {
     display: flex;
@@ -389,10 +419,103 @@ button {
     padding-right: 5px;
 }
 
- 
-
 /* Banner end */
 
+/* Service start */
+.tf__service_area {
+    background-color: var(--colorBlack200);
+}
+.tf__service_item {
+    background-color: var(--colorDark400);
+    padding: 40px 40px 40px 30px;
+    box-shadow: var(--boxShadow);
+    border-radius: 6px;
+    transition: all linear .3s;
+}
+.tf__service_item:hover {
+    background: var(--blueGradient); 
+}
+.tf__service_item:hover .tf__service_icon {
+    background: var(--colorWhite); 
+}
+.tf__service_item:hover.tf__service_item p, .tf__service_item span   {
+    color: var(--colorWhite); 
+}
+.tf__service_item:hover.tf__service_item span   {
+    color: var(--colorWhite); 
+}
+.tf__service_item:hover .tf__service_icon img   {
+    filter: brightness(0%); 
+}
+.tf__service_item .tf__service_arrow_icon   {
+    transition: all linear .3s;
+}
+.tf__service_item:hover .tf__service_arrow_icon   {
+    width: 11%; 
+}
+.tf__service_item:hover .tf__service_border   {
+    filter: brightness(0) invert(1);
+}
+
+.tf__service_item:hover  {
+    background: var(--blueGradient); 
+} 
+.tf__service_item p {
+    color: var(--colorWhite200);
+    font-size: 14px; 
+    padding-bottom: 20px;
+}
+.tf__service_item h3 {  
+    font-size: 20px; 
+    font-weight: 600; 
+    padding: 30px 0px 5px; 
+}
+.tf__service_number span {
+    color: var(--colorDark); 
+    font-size: 60px;  
+    font-weight: 600;
+}
+.tf__service_icon {
+    width: 70px;
+    height: 70px; 
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.14) inset;
+    background-color: var(--colorDark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+.tf__service_border {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+}
+
+/* Service end */
+
+/* Generated start */
+.tf__generated_area {
+ background-color: var(--colorDark300);
+}
+/* Generated end */
+
+/* Various start */
+.tf__various_area {
+    background-color: var(--colorBlack200);
+}
+/* Various end */
+
+/* Price start */
+.tf__price_area {
+    background-color: var(--colorDark300);
+}
+/* Price end */
+
+/* Painting start */
+.tf__painting_area {
+    background-color: var(--colorDark300);
+}
+/* Paintingend */
 
 /* footer start */
 .tf__footer {

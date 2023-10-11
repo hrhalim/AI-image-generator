@@ -118,18 +118,14 @@ button {
     color: var(--colorWhite); 
     background: var(--blueGradient);
 }
-.bg_img_cover {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.tf__sec_title { 
+ 
+.tf__sec_title h2 { 
     text-align: center; 
     font-size: 50px; 
     font-weight: 600;
     line-height: 60px;
 }
-.tf__sec_title span {  
+.tf__sec_title h2 span {  
     background: var(--redGradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -444,19 +440,12 @@ button {
 .tf__service_item:hover.tf__service_item span   {
     color: var(--colorWhite); 
 }
-.tf__service_item:hover .tf__service_icon img   {
+.tf__service_item:hover .tf__service_icon img  {
     filter: brightness(0%); 
-}
-.tf__service_item .tf__service_arrow_icon   {
-    transition: all linear .3s;
-}
-.tf__service_item:hover .tf__service_arrow_icon   {
-    width: 11%; 
-}
+} 
 .tf__service_item:hover .tf__service_border   {
     filter: brightness(0) invert(1);
 }
-
 .tf__service_item:hover  {
     background: var(--blueGradient); 
 } 
@@ -484,11 +473,41 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 100px;
+    position: relative;
+}
+.tf__service_icon::after {
+    position: absolute;
+    top: -10px;
+    right: -43px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../images/icon/border-line.png);
+    background-repeat: no-repeat;
+    /* animation: rotate linear 7s infinite;
+    -webkit-animation: rotate linear 7s infinite; */
 }
 .tf__service_border {
     position: absolute;
     top: -6px;
     right: -10px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
 }
 
 /* Service end */
@@ -496,6 +515,77 @@ button {
 /* Generated start */
 .tf__generated_area {
  background-color: var(--colorDark300);
+ background-repeat: no-repeat; 
+ background-position-y: bottom;
+ position: relative;
+  
+}
+.tf__generated_area::after {
+    position: absolute;
+    bottom: -103px;
+    right: -46%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg/generate-shage-bg.png);
+    background-repeat: no-repeat;
+}
+.tf__generated_list_wrapper {
+    border-radius: 110px;
+    border: 1px solid rgba(255, 255, 255, 0.14);   
+    display: grid;
+    grid-template-columns: 100px auto 20px; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px 15px 15px;
+    gap: 20px;
+    margin-bottom: 30px;
+    transition: all linear .3s;
+}
+
+.tf__generated_list_wrapper:hover {
+     background-color: var(--colorBlack100);
+}
+.tf__generated_list_wrapper:hover .tf__generated_number span{
+    background: var(--redGradient);
+}
+.tf__generated_number span {
+    font-size: 30px; 
+    font-weight: 600;
+    color: var(--colorWhite);
+    font-family: var(--headingFont);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: var(--colorDark);
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.14) inset;
+    transition: all linear .3s;
+}
+.tf__generated_text h3 { 
+    color: var(--colorWhite);
+    font-size: 20px;  
+    padding: 10px 0px 7px; 
+}
+.tf__generated_text p { 
+    color: var(--colorWhite200);
+    font-size: 20px;    
+    font-size: 14px;   
+    line-height: 1.5;
+}   
+.tf__generated_img{ 
+    text-align: right;  
+    z-index: 9;
+}
+
+.tf__generated_img img{
+    background: var(--yellowGradient); 
+    border-radius: 20px;
+    border: 6px solid transparent;
+    box-shadow: var(--boxShadow);
+    text-align: right; 
 }
 /* Generated end */
 

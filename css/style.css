@@ -81,6 +81,7 @@ textarea::placeholder {
 
 button {
     border: none;
+    background-color: transparent;
 }
 
 .btn_primary {
@@ -100,6 +101,9 @@ button {
 .btn_primary:hover { 
     background: var(--redGradient);
 }
+.btn_primary i {
+    padding-left: 6px;
+}
 .btn_secondary {
     color: var(--colorBlack); 
     font-size: 15px; 
@@ -115,6 +119,27 @@ button {
     -o-transition: all linear .3s;
 }
 .btn_secondary:hover { 
+    color: var(--colorWhite); 
+    background: var(--blueGradient);
+}
+
+.btn_price {
+    color: var(--colorWhite); 
+    font-size: 15px; 
+    font-weight: 500; 
+    border-radius: 30px;
+    padding: 12px 47px;
+    background-color: var(--colorBlack100);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+.btn_price i {
+    padding-left: 2px;
+}
+.btn_price:hover { 
     color: var(--colorWhite); 
     background: var(--blueGradient);
 }
@@ -593,18 +618,234 @@ button {
 .tf__various_area {
     background-color: var(--colorBlack200);
 }
+.tf__various_list_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+} 
+
+.tf__various_list_item img {
+    border-radius: 10px;
+}
+.various_menu {
+    border-radius: 50px;
+    background-color: var(--colorDark400);
+    box-shadow: var(--boxShadow);
+    padding: 8px 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 782px;
+    margin: 0 auto;
+}
+.various_menu button {
+    color: var(--colorWhite); 
+    font-family: var(--headingFont);
+    font-size: 15px; 
+    font-weight: 600; 
+    border-radius: 30px !important;  
+    transition: all linear .3s;
+    border: 0;
+    background-color: transparent; 
+    display: inline-block;
+    padding: 10px 20px;
+}
+.various_menu button.active { 
+    background: var(--redGradient);
+}
+.various_menu button:hover { 
+    background: var(--redGradient);
+    color: var(--colorWhite); 
+    box-shadow: 0px 2px 10px 0px rgba(239, 31, 131, 0.40);
+}
 /* Various end */
 
 /* Price start */
 .tf__price_area {
     background-color: var(--colorDark300);
 }
+.tf__price_tab_wrapper { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+}
+.tf__price_wrapper { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; 
+}
+.tf__price_item {
+    border-radius: 10px;
+    background-color: var(--colorDark); 
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.14) inset;
+    padding: 30px;
+}
+
+.tf__price_btm {
+    border-radius: 10px;
+    background-color: var(--colorDark); 
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.14) inset;
+    padding-left: 75px;
+}
+.price_nav {
+    border-radius: 50px;
+    background-color: var(--colorBlack100); 
+    box-shadow: var(--boxShadow);
+    width: 200px; 
+    padding: 5px;
+}
+.price_nav button {
+    color: var(--colorWhite); 
+    font-family: var(--headingFont);
+    font-size: 13px; 
+    font-weight: 600;  
+    transition: all linear 0.5s;
+    padding: 7px 15px;
+    display: inline-block;
+}
+.price_nav button.active {
+    border-radius: 30px; 
+    background: var(--redGradient);   
+    box-shadow: 0px 2px 10px 0px rgba(239, 31, 131, 0.40);  
+}
+.price_nav button:hover {
+    background: var(--redGradient); 
+    border-radius: 30px; 
+    box-shadow: 0px 2px 10px 0px rgba(239, 31, 131, 0.40);  
+}
+.tf__price_item p { 
+    color: var(--colorWhite100); 
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 1.5; 
+    padding-bottom: 15px; 
+    border-bottom: 2px solid transparent;
+    border-image: var(--redGradient);
+    border-image-slice: 1;
+     
+}
+.tf__price_item h3 {
+    background: linear-gradient(122deg, #FFE000 0.5%, #BDFF00 51.22%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 16px;  
+    padding-bottom: 5px;
+}
+.tf__price_item h4 { 
+    font-family: var(--paraFont);
+    font-size: 30px; 
+    padding-bottom: 15px;
+}
+.tf__price_item sub { 
+    color: #AEB2B9; 
+    font-size: 14px; 
+    font-weight: 500; 
+}
+.tf__price_item ul {
+    padding: 10px 0px 27px;
+}
+.tf__price_item li {
+    color: var(--colorWhite); 
+    font-size: 15px; 
+    font-weight: 400;
+    padding-bottom: 17px; 
+    padding-right: 10px;
+}
+.tf__price_item li i{
+   padding-right: 12px;
+}
+.tf__price_item .disable{
+   color: #999EA7;
+}
+
+
 /* Price end */
+
+/* Faq start */
+.tf__faq_area {
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;
+    background-color: var(--colorBlack200);
+}
+/* Faq start */
 
 /* Painting start */
 .tf__painting_area {
     background-color: var(--colorDark300);
 }
+.tf__painting_item {
+    border-radius: 10px; 
+    padding: 352px 34px 50px;
+    position: relative;
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.tf__painting_item::after {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-radius: 0px 0px 10px 10px;
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 64.28%);
+}
+.tf__painting_item span {
+    color: var(--colorWhite); 
+    font-size: 13px; 
+    font-family: var(--headingFont);
+    font-weight: 600; 
+    padding: 5px 21px;
+    border-radius: 30px; 
+    background: var(--redGradient);
+    box-shadow: 0px 2px 10px 0px rgba(239, 31, 131, 0.40);
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.tf__painting_item ul {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 13px;
+}
+.tf__painting_item li {
+    color: var(--colorWhite); 
+    font-size: 13px; 
+    font-weight: 500; 
+    position: relative;
+    z-index: 9;
+    font-family: var(--headingFont);
+}
+.tf__painting_item li::after {
+     position: absolute;
+     top: 8px;
+     right: -16px;
+     width: 4px;
+     height: 4px;
+     content: "";
+     border-radius: 100px;
+     background-color: var(--colorWhite);
+
+}
+.tf__painting_item li:last-child::after {
+    position: unset;
+}
+.tf__painting_item h3 a {  
+    font-size: 24px; 
+    font-weight: 600;
+    color: var(--colorWhite);
+    line-height: 1.3;
+    position: relative;
+    z-index: 9;
+    transition: all linear 0.3s;
+}
+.tf__painting_item h3 a:hover {  
+    color: var(--colorBlue);
+}
+ 
 /* Paintingend */
 
 /* footer start */

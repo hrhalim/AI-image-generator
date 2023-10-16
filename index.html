@@ -209,7 +209,7 @@
                 </div> 
             </div>
         </div>
-    </div>
+    </div> 
 </section>
 <!--=============================
     SERVICE END
@@ -291,7 +291,7 @@
 <!--=============================
     VARIOUS START
 ==============================-->
-<section class="tf__various_area pt_110 pb_140 xs_pb_80 xs_pt_80">
+<section class="tf__various_area pt_110 pb_140 xs_pb_80 xs_pt_80 position-relative ">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -406,7 +406,7 @@
                </div>
             </div>
         </div>
-    </div>
+    </div> 
 </section>
 <!--=============================
     VARIOUS END
@@ -416,7 +416,7 @@
 <!--=============================
     PRICE START
 ==============================-->
-<section class="tf__price_area pt_100 pb_140 xs_pb_80 xs_pt_80">
+<section class="tf__price_area pt_100 pb_140 xs_pb_80 xs_pt_80 position-relative">
     <div class="container">
         <div class="row">
             <div class="col-xl-8 m-auto">
@@ -557,11 +557,17 @@
                         <h5>Embrace AI Image !</h5>
                         <p>Fusce vitae consectetur libero, at congue lorem. Aenean vehicula finibus quam tincidunt lacus iaculis Nullam pharetra metus velit.</p>
                         <a class="btn_primary" href="#">Try Hunt.ai Free</a>
+                    </div> 
+                </div> 
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="tf__price_btm_img">
+                        <img src="images/thumb/price-btm-img.png" alt="Image">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <img src="images/icon/price-shape.png" class="tf__price_shape" alt="Shape">
 </section>
 <!--=============================
     PRICE END
@@ -576,20 +582,37 @@
         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-12">
                 <div class="tf__faq_left">
-                   <div class="tf__faq_exprieance">
-                    <div class="tf__faq_exprieance_item">
-                        <h2>28+</h2>
-                        <p>Year of Experiences</p>
+                   <div class="tf__faq_exprieance_wrapper">
+                        <div class="tf__faq_bg_liner"></div>
+                            <div class="tf__faq_exprieance">
+                                <div class="tf__faq_exprieance_item">
+                                    <h2>28+</h2>
+                                    <p>Year of Experiences</p>
+                                </div>
+                                <div class="tf__faq_exprieance_item">
+                                    <img class="img-fluid" src="images/icon/hand-icon.png" alt="Image">
+                                </div>
+                            </div> 
                     </div>
-                    <div class="tf__faq_exprieance_item">
-                        <img class="img-fluid" src="images/icon/hand-icon.png" alt="Image">
-                    </div>
-                   </div> 
-                </div>
+                </div> 
             </div>
             <div class="col-xl-6 col-lg-6 col-md-12">
-                <div class="tf__faq_right pt_90 pb_80 xs_pb_40 xs_pt_40">
-                    <button class="tf__faq_btn"><i class="fa-solid fa-play"></i></button> 
+                <div class="tf__faq_right pt_90 pb_80 xs_pb_40 xs_pt_40">  
+                    <button type="button" class="video_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-play"></i>
+                    </button> 
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header"> 
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://www.youtube.com/embed/R8lHaEZYpCU?si=Xt38scf0VJQ8uF9H" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div> 
+                        </div>
+                        </div>
+                    </div> 
                     <h3>Mystery - Frequently Asked Questions?</h3>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
@@ -598,7 +621,7 @@
                                 How accurate is the AI image generator?
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>Sed interdum ipsum fermentum, condimentum erat eget, egestas est. Etiam vel justo laoreet, efficitur lectus in, tincidunt magna. Aliquam eros lorem, rhoncus quis justo id venenatis sapien vel sem convallis rutrum.</p>
                             </div>
@@ -610,7 +633,7 @@
                                 Can I customize the output of the AI image?
                             </button>
                           </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p>Sed interdum ipsum fermentum, condimentum erat eget, egestas est. Etiam vel justo laoreet, efficitur lectus in, tincidunt magna. Aliquam eros lorem, rhoncus quis justo id venenatis sapien vel sem convallis rutrum.</p>
                             </div>
@@ -633,7 +656,9 @@
             </div>
         </div>
     </div>
-</section>
+    <img src="images/icon/faq-shape-1.png" class="tf__faq_shape_1" alt="Shape">
+    <img src="images/icon/faq-shape-2.png" class="tf__faq_shape_2" alt="Shape">
+</section> 
 <!--=============================
     FAQ END
 ==============================-->
@@ -698,14 +723,14 @@
 <!--=============================
     FOOTER START
 ==============================-->
-<footer class="tf__footer pt_120 xs_pt_80">
+<footer class="tf__footer pt_120 xs_pt_80 position-relative">
     <div class="container">
-        <div class="tf__footer_top_wrapper">
+        <div class="tf__footer_top_wrapper mb_100 xs_mb_40">
             <div class="row">
                 <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="tf__footer_top_list">
-                        <div class="tf__footer_topItem">
-                            <img src="images/icon/gallary-img.png" alt="Image">
+                        <div class="tf__footer_top_icon">
+                            <img src="images/icon/gallary-img.png" class="img-fluid" alt="Image">
                         </div>
                         <div class="tf__footer_topItem">
                             <h2>Start using our Ai</h2>
@@ -715,8 +740,8 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="tf__footer_top_list">
-                        <div class="tf__footer_topItem">
-                            <img src="images/icon/sign.png" alt="Image">
+                        <div class="tf__footer_top_icon">
+                            <img src="images/icon/sign.png" class="img-fluid" alt="Image">
                         </div>
                         <div class="tf__footer_topItem">
                             <h2>Start Free our Ai</h2>
@@ -726,8 +751,8 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="tf__footer_top_list">
-                        <div class="tf__footer_topItem">
-                            <img src="images/icon/user.png" alt="Image">
+                        <div class="tf__footer_top_icon">
+                            <img src="images/icon/user.png" class="img-fluid" alt="Image">
                         </div>
                         <div class="tf__footer_topItem">
                             <h2>Start using our Ai</h2>
@@ -740,9 +765,9 @@
         <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-4">
                 <div class="tf__footer_item">
-                    <a href="/"><img src="images/logo/footer-logo.png" alt="Footer Logo"></a>
+                    <a href="/"><img src="images/logo/footer-logo.png" class="img-fluid" alt="Footer Logo"></a>
                     <p>Cras incident lobotids feudist makes viramas sagittas eu valuta.</p>
-                    <ul class="tf__footer_social"> 
+                    <ul class="tf__footer_social d-flex"> 
                         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -798,14 +823,14 @@
             <div class="col-xl-3 col-lg-4 col-md-4">
                 <div class="tf__footer_item">
                     <h4>Feeling Like Subscribe?</h4>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Enter your email" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Get</button>
+                    <form class="d-flex mt_10" role="search">
+                        <input type="search" placeholder="Enter your email" aria-label="Search">
+                        <button type="submit">Get</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="tf__footer_btm">
+        <div class="tf__footer_btm mt_50 pt_30 xs_mt_30">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="tf__footer_btmItem">
@@ -814,7 +839,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="tf__footer_btmItem">
-                        <ul class="tf__footer_btmMenu">
+                        <ul class="d-flex gap-3 justify-content-end">
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Term of Service</a></li> 
                         </ul>
@@ -823,6 +848,8 @@
             </div>
         </div>
     </div> 
+    <img src="images/icon/faq-shape-2.png" class="tf__footer_shape_1" alt="Shape">
+    <img src="images/icon/price-shape.png" class="tf__footer_shape_2" alt="Shape">
 </footer> 
 <!--=============================
     FOOTER END

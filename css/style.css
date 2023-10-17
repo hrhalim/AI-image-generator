@@ -451,6 +451,16 @@ button {
 .tf__banner_content ul li img {
     padding-right: 5px;
 }
+.tf__banner_slide {
+    width: 430px;
+    height: 380px;
+}
+
+.tf__banner_slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
 
 /* Banner end */
 

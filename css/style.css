@@ -170,6 +170,11 @@ button {
 .slick-slide {
     margin: 0 15px;
 }  
+
+.bg_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 :root {
     --colorPrimary: #292B75; 
     --colorBlack: #000000; 
@@ -449,7 +454,7 @@ button {
     font-weight: 400; 
 }
 .tf__banner_content ul li img {
-    padding-right: 5px;
+    padding-right: 10px;
 }
 .tf__banner_slide {
     width: 430px;
@@ -586,6 +591,11 @@ button {
  background-position-y: bottom;
  position: relative;
   
+}
+.tf__generate_shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .tf__generated_area::after {
     position: absolute;
